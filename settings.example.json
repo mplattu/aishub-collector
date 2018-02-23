@@ -2,6 +2,10 @@
   "aishub": {
     "url": "http://data.aishub.net/ws.php?username=YOUR_AISHUB_USERNAME&format=1&output=json&compress=3&latmin=-90&latmax=+90&lonmin=-180&lonmax=+180"
   },
+  "stations": {
+    "url_index": "http://www.aishub.net/stations?page=%d",
+    "url_station": "http://www.aishub.net/stations/%d"
+  },
   "database": {
     "host": "localhost",
   	"user": "YOUR_DB_USERNAME",

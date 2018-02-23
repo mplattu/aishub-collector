@@ -71,3 +71,16 @@ CREATE TABLE IF NOT EXISTS `temp` (
   `eta` char(32) DEFAULT NULL,
   `_writetime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Data written to db'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Table structure for table `stations`
+--
+
+CREATE TABLE IF NOT EXISTS `stations` (
+  `station_id` int(11),
+  `name` char(64) DEFAULT NULL,
+  `uptime` int(11) DEFAULT NULL,
+  `longitude` float DEFAULT NULL,
+  `latitude` float DEFAULT NULL,
+  `_writetime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Data written to db'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
